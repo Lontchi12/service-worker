@@ -18,11 +18,10 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <script>
-            navigator.serviceWorker.register('myserviceworker.js');
 
             if ('serviceWorker' in navigator) {
              window.addEventListener('load', function() {  
-                   navigator.serviceWorker.register('/sw.js').then(
+                   navigator.serviceWorker.register('/myserviceworker.js').then(
                      function(registration) {
                     // Registration was successful
                            console.log('ServiceWorker registration successful with scope: ', registration.scope);     },
